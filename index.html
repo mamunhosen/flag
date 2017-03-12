@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="plugin/build/css/intlTelInput.css">
+</head>
+<body>
+
+<input type="text" id="demo" placeholder="" name="number">
+<button>submit</button>
+
+
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="plugin/build/js/intlTelInput.js"></script> 
+<script>	
+$("#demo").intlTelInput();
+$("button").click(function(){
+  window.alert( $('.selected-dial-code').val() );
+});
+</script>
+</body>
+</html>
